@@ -1,3 +1,6 @@
+# SKU
+import /product/etc/prop/build_${ro.boot.product.hardware.sku}.prop
+
 # eBPF
 ro.bpf.kver_override=5.4.186
 

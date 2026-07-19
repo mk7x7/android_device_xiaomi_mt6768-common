@@ -271,6 +271,9 @@ ro.vendor.mtk.sensor.support=yes
 ro.vendor.mtk_shutdown_support=0
 init.userspace_reboot.is_supported=true
 
+# SKU
+import /vendor/etc/prop/build_${ro.boot.product.hardware.sku}.prop
+
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
