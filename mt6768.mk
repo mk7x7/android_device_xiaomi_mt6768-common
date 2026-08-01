@@ -316,3 +316,28 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6768-common/mt6768-common-vendor.mk)
+
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+TARGET_INCLUDE_AXFX := true
+
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 48,8,2
+AXION_CAMERA_FRONT_INFO := 8
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := doissM
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Helio_G85
+
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
+
+TARGET_INCLUDES_LOS_PREBUILTS := true
+
+PRODUCT_NO_CAMERA := false
+
+
+
+
